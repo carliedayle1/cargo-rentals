@@ -1,0 +1,12 @@
+.hero {
+  background-color: rgba(253, 126, 20, 0.65);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      65deg,
+      rgba(194, 37, 92, 0.55),
+      rgba(253, 126, 20, 0.65)
+    ),
+    url("https://images.unsplash.com/photo-1612409578638-b890d0fa9364?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
