@@ -1,10 +1,11 @@
 import { PRIMARY_GRADIENT } from "@/const";
 import { Button, Center, Container, Flex } from "@mantine/core";
 import classes from "./searchengine.module.css";
-import { SelectRegion } from "./SelectRegion";
-import { SelectCity } from "./SelectCity";
-import { SelectCarMake } from "./SelectCarMake";
-import { SelectDate } from "./SelectDate";
+import { SelectRegion } from "../SelectRegion";
+import { SelectCity } from "../SelectCity";
+import { SelectCarMake } from "../SelectCarMake";
+import { SelectDate } from "../SelectDate";
+import { notifications } from "@mantine/notifications";
 
 export const SearchEngine = () => {
   return (
@@ -26,6 +27,12 @@ export const SearchEngine = () => {
           variant="gradient"
           gradient={PRIMARY_GRADIENT}
           w={{ base: "200px", sm: "300px", md: "500px" }}
+          onClick={() =>
+            notifications.show({
+              title: "Default notification",
+              message: "Hey there, your code is awesome! 🤥",
+            })
+          }
         >
           Search Cars
         </Button>
